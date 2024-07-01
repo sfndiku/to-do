@@ -1,19 +1,20 @@
 // frontend/src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Signup from './components/Signup';
-import Signin from './components/Signin';
-import EmailAuth from './components/EmailAuth';
-import Todos from './components/Todos';
+import Signup from './components/Signup.js';
+import Signin from './components/Signin.js';
+import EmailAuth from './components/EmailAuth.js';
+import Todos from './components/Todos.js';
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/signup" component={Signup} />
-        <Route path="/signin" component={Signin} />
-        <Route path="/email-auth" component={EmailAuth} />
-        <Route path="/todos" component={Todos} />
+        <>Hello</>
+        <Route path="/signup" element={<Signup/>} />
+        <Route path="/signin" element={Signin} />
+        <Route path="/email-auth" element={EmailAuth} />
+        <Route path="/todos" element={Todos} />
       </Routes>
     </Router>
   );
