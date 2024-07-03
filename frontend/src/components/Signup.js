@@ -1,5 +1,6 @@
 // frontend/src/components/Signup.js
 import React, { useState } from 'react';
+import './Signup.css';
 
 const Signup = () => {
 //   const [email, setEmail] = useState('');
@@ -17,7 +18,7 @@ const Signup = () => {
 //};
 
   return (
-    <div>
+    <div className='container'>
       <h2>Signup</h2>
       <form>
         <input 

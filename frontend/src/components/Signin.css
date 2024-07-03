@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #740e4c;
+    color: #00453c;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #00C6C7; /* Set the background color to be transparent */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Adjust the alpha value here for the box shadow transparency */
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+  
+.password-container input {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+}
+  
+.password-container .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.signup-link {
+    color: #007bff;
+    cursor: pointer;
+  }
+
+h2 {
+    font-size: 24px;
+}
+
+input[type="email"] {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+}
+
+input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+}
+
+
+button {
+    background-color: #0051ad;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.weather-info {
+    margin-top: 20px;
+}
