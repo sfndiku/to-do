@@ -36,6 +36,10 @@ input[type="password"] {
     border-radius: 5px;
 }
 
+.signup-link {
+    color: #007bff;
+    cursor: pointer;
+  }
 
 button {
     background-color: #0051ad;

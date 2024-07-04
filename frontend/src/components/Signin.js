@@ -1,11 +1,13 @@
 // frontend/src/components/Signin.js
 import React, { useState } from 'react';
-import { Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './Signin.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 
+
 const Signin = () => {
+  const Navigate = useNavigate();
 //   const [email, setEmail] = useState('');
 //   const [password, setPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
@@ -51,6 +53,7 @@ const Signin = () => {
             />
         </div>
         <button type="submit">Signin</button>
+
         <p>
             Not a user? <span className="signup-link" onClick={handleSignupRedirect}>Signup</span>
         </p>

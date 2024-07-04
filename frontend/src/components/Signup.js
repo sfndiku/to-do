@@ -1,8 +1,10 @@
 // frontend/src/components/Signup.js
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Signup.css';
 
 const Signup = () => {
+  const Navigate = useNavigate();
 //   const [email, setEmail] = useState('');
 //   const [password, setPassword] = useState('');
 
@@ -15,6 +17,11 @@ const Signup = () => {
 //     });
 //     const data = await response.json();
 //     console.log(data);
+
+  const handleSigninRedirect = () =>{
+    Navigate('/signin');
+  }
+
 //};
 
   return (
@@ -34,6 +41,10 @@ const Signup = () => {
         //   onChange={(e) => setPassword(e.target.value)} 
         />
         <button type="submit">Signup</button>
+        <p>
+          Already a User? <span className="signup-link" onClick={handleSigninRedirect}>Signup</span>
+        </p>
+        
       </form>
     </div>
   );
