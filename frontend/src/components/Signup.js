@@ -40,7 +40,7 @@ const Signup = () => {
         //   value={password} 
         //   onChange={(e) => setPassword(e.target.value)} 
         />
-        <button type="submit">Signup</button>
+        <button type="submit">SignUp</button>
         <p>
           Already a User? <span className="signup-link" onClick={handleSigninRedirect}>Signup</span>
         </p>
